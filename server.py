@@ -3,7 +3,6 @@ import json
 from QAModel.predictor import QAModel
 from dotenv import load_dotenv
 load_dotenv() 
-import torch
 from QAModel.predictor import QAModel 
 from flask_cors import CORS
 

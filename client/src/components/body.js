@@ -33,6 +33,7 @@ class Body extends React.Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     const question = this.state.question;
     const context = this.state.context;
     if (question === "" || context === "") {
@@ -91,6 +92,7 @@ class Body extends React.Component {
             size="mb"
             active
             onClick={this.handleSubmit}
+            type="submit"
           >
             Answer
           </Button>
